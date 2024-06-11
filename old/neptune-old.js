@@ -1,23 +1,4 @@
-// ==UserScript==
-// @name         Neptune v6
-// @namespace    http://tampermonkey.net/
-// @version      6
-// @description  try to take over the world!
-// @author       Phoenix, AlienDrew
-// @match        https://www.multiplayerpiano.net/*
-// @match        https://mppclone.com/*
-// @match        https://www.multiplayerpiano.com/*
-// @match        http://augustberchelmann.com/piano/*
-// @match        https://mpp.terrium.net/*
-// @icon         https://www.google.com/s2/favicons?domain=mppclone.com
-// @grant        GM_info
-// @grant        GM_getResourceText
-// @grant        GM_getResourceURL
-// @resource     MIDIPlayerJS https://raw.githubusercontent.com/LapisHusky/midi-player-js-fixed/main/midiplayer.js
-// @run-at       document-end
-// ==/UserScript==
-
-var prefix = "-";
+var prefix = ">";
 
 var stringMIDIPlayerJS = GM_getResourceText("MIDIPlayerJS");
 var scriptMIDIPlayerJS = document.createElement("script");
