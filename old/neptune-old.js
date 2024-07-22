@@ -9,7 +9,7 @@ scriptMIDIPlayerJS.appendChild(document.createTextNode(stringMIDIPlayerJS));
 // CORS Anywhere (allows downloading files where JS can't)
 var useCorsUrl = function(url) {
     var newUrl = null; // send null back if it's already a cors url
-    var cors_api_url = 'https://cors-anywhere.phoenixxx1.repl.co/';
+    var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
     // removes protocols before applying cors api url
     if (url.indexOf(cors_api_url) == -1) newUrl = cors_api_url + url.replace(/(^\w+:|^)\/\//, '');
     return newUrl;
